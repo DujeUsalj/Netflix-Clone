@@ -1,0 +1,37 @@
+.Row {
+  margin-left: 20px;
+  color: white;
+}
+.Posters {
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.Posters::-webkit-scrollbar {
+  display: none;
+}
+.Poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  transition: transform 450ms;
+  margin-right: 10px;
+  padding: 20px;
+}
+.Poster:hover {
+  transform: scale(1.08);
+}
+
+.PosterLarge {
+  object-fit: contain;
+  width: 100%;
+  max-height: 250px;
+  transition: transform 450ms;
+  margin-right: 10px;
+  padding: 20px;
+}
+
+.PosterLarge:hover {
+  transform: scale(1.09);
+}
